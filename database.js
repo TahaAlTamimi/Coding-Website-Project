@@ -49,6 +49,12 @@ let postsSchema = {
   comments: Array
 };
 
+let eventSchema = {
+  img: String,
+  title: String,
+  dis: String
+};
+
 let Videos = mongoose.model("vidoes", vidoesSchema);
 // let Material = mongoose.model("material", materialSchema);
 let signIn = mongoose.model("signIn", signInSchema);
@@ -56,6 +62,7 @@ let signUp = mongoose.model("signUp", signUpSchema);
 let videos = mongoose.model("videos", videosSchema);
 let material = mongoose.model("material", materialSchema);
 let posts = mongoose.model("posts", postsSchema);
+let event = mongoose.model("event", eventSchema);
 
 module.exports = {
   Videos,
@@ -64,7 +71,8 @@ module.exports = {
   signUp,
   videos,
   material,
-  posts
+  posts,
+  event
 };
 // let getVidoes = cb => {
 //   Vidoes.find({}, (err, data) => {
