@@ -20,17 +20,51 @@ let vidoesSchema = new mongoose.Schema({
   dis: String
 });
 
-let materialSchema = new mongoose.Schema({
+let signInSchema = {
+  email: String,
+  password: String
+};
+
+let signUpSchema = {
+  name: String,
+  email: String,
+  password: String
+};
+
+let videosSchema = {
+  name: String,
+  dis: String,
+  url: String
+};
+
+let materialSchema = {
+  githubUrl: String,
+  slidesUrl: String
+};
+
+let postsSchema = {
   title: String,
-  dis: String
-});
+  subject: String,
+  priority: Number,
+  comments: Array
+};
 
 let Videos = mongoose.model("vidoes", vidoesSchema);
-let Material = mongoose.model("material", materialSchema);
+// let Material = mongoose.model("material", materialSchema);
+let signIn = mongoose.model("signIn", signInSchema);
+let signUp = mongoose.model("signUp", signUpSchema);
+let videos = mongoose.model("videos", videosSchema);
+let material = mongoose.model("material", materialSchema);
+let posts = mongoose.model("posts", postsSchema);
 
 module.exports = {
   Videos,
-  Material
+  // Material,
+  signIn,
+  signUp,
+  videos,
+  material,
+  posts
 };
 // let getVidoes = cb => {
 //   Vidoes.find({}, (err, data) => {
