@@ -6,32 +6,20 @@ export default class App extends Component {
         return (
             <div>
                 <AppOsaid />
+                {/* <button onClick={this.checkServer}>Checking server</button> */}
+        <AppSharafalden/>
             </div>
         )
     }
+  }
 /*
+test 
 import React, { Component } from "react";
 import "./App.css";
+import AppSharafalden from "./components/AppSharafalden";
 import axios from "axios";
 import Home from './components/Home'
 import NavBar from "./components/NavBar";
 class App extends Component {
   state = {};
-
-  // checkServer = () => {
-  //   axios.get("http://localhost:9000/posts/").then(res => {
-  //     console.log(res.data);
-  //   });
-  // };
-  render() {
-    return (
-      <>
-        <h1>Working Fine</h1>
-        {/* <button onClick={this.checkServer}>Checking server</button> */}
-/*
-        <NavBar/>
-      </>
-    );
-  }
-}
 */
