@@ -4,13 +4,15 @@ export default class Question extends Component {
 
     state = {
         title:"",
-        subject:""
+        subject:"",
+        priority:0
+
 
     }
 
     Submit = (e)=>{
         e.preventDefault();
-        this.props.add(this.state.title,this.state.subject);
+        this.props.add(this.state.title,this.state.subject,this.state.priority);
     
 
         alert ('Hello')
@@ -22,7 +24,16 @@ userInput = (e) => {
         { [e.target.name]:e.target.value });
 }
 
+selectInput = (e) => {
+this.setState ({
+    priority:e.target.value
+
+})
+
+}
+
     render() {
+
         return (
             <form>
 
@@ -47,12 +58,12 @@ userInput = (e) => {
       placeholder="Title"/>
    
    
-    <select required id="inputState" class="form-control">
+    <select  onChange={this.selectInput} required id="inputState" class="form-control">
 
-        <option selected disabled>Priority</option>
-        <option>High </option>
-        <option>Medium </option>
-        <option>Low </option>
+        <option  value= '0'selected disabled>Priority</option>
+        <option value='1' name="priority"  >High </option>
+        <option value='2' name="priority" >Medium </option>
+        <option value='3' name="priority" >Low </option>
 
       </select>
   </div>
