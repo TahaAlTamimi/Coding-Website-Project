@@ -13,6 +13,7 @@ export default class App extends Component {
     }
   }
 /*
+test 
 import React, { Component } from "react";
 import "./App.css";
 import AppSharafalden from "./components/AppSharafalden";
