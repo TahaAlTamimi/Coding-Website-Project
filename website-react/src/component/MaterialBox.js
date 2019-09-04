@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import axios from "axios";
+import photo from './photo.png'
+
 export class MaterialBox extends Component {
   state = {
     material: [],
@@ -33,7 +35,10 @@ export class MaterialBox extends Component {
     const { material, a, b, c } = this.props;
       console.log(this.state.material)
     return (
+      <>
+      
       <div className=" col-md-4">
+        
         {/* {material.map((item,index)=>{ */}
         <div
           onClick={this.insertMaterial}
@@ -78,6 +83,7 @@ export class MaterialBox extends Component {
 
         {/* //  })} */}
       </div>
+      </>
     );
   }
 }

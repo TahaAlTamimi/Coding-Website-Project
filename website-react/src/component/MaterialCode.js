@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import MaterialBox from "./MaterialBox";
 import axios from 'axios'
+import Header from './Header'
+import photo from './photo.png'
 
 var x = 0;
 export class MaterialCode extends Component {
@@ -25,22 +27,31 @@ export class MaterialCode extends Component {
   render() {
     console.log(this.state.material)
     return (
+      <>
+      <Header/>
       <div className="container">
+         
         <div className="row">
+        
+          
           {this.state.material.map((item, index) => {
             return (
+              
               <MaterialBox
                 material={item}
                 key={index}
                 a={x++}
                 b={x++}
                 c={x++}
+                
               />
             );
           })}
           {/* {(x = 0)} */}
+          
         </div>
       </div>
+      </>
     );
   }
 }
