@@ -53,7 +53,7 @@ let postsSchema = {
 let eventSchema = {
   img: String,
   title: String,
-  dis: String
+  disc: String
 };
 
 let Videos = mongoose.model("vidoes", vidoesSchema);
