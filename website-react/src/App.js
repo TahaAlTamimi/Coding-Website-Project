@@ -1,19 +1,27 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
-import AppTamimi from './AppTamimi';
 
-export class App extends Component {
-    // static propTypes = {
+import AppOsaid from './AppOsaid';
 
-    // }
-
+export default class App extends Component {
     render() {
         return (
             <div>
-                <AppTamimi/>
+                <AppOsaid />
+                {/* <button onClick={this.checkServer}>Checking server</button> 
+                           <AppTamimi/>
+         <AppSharafalden/>*/}
             </div>
         )
     }
-}
-
-export default App
+  }
+/*
+test 
+import React, { Component } from "react";
+import "./App.css";
+import AppSharafalden from "./components/AppSharafalden";
+import axios from "axios";
+import Home from './components/Home'
+import NavBar from "./components/NavBar";
+class App extends Component {
+  state = {};
+*/

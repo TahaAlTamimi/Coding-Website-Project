@@ -48,13 +48,14 @@ let postsSchema = {
   title: String,
   subject: String,
   priority: Number,
-  comments: Array
+  component: String
+  // comments: Array
 };
 
 let eventSchema = {
   img: String,
   title: String,
-  dis: String
+  disc: String
 };
 
 let Videos = mongoose.model("vidoes", vidoesSchema);
