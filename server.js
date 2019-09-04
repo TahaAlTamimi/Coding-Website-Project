@@ -11,6 +11,8 @@ app.use("/signIn", require("./servers/signIn"));
 app.use("/signUp", require("./servers/signUp"));
 app.use("/materials", require("./servers/materials"));
 app.use("/posts", require("./servers/posts"));
+app.use("/events", require("./servers/events"));
+
 
 // app.get("/", (req, res) => {
 //   res.json("server is working");
