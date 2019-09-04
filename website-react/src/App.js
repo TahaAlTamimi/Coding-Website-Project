@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import AppOsaid from './AppOsaid';
 
 export default class App extends Component {
@@ -6,8 +7,9 @@ export default class App extends Component {
         return (
             <div>
                 <AppOsaid />
-                {/* <button onClick={this.checkServer}>Checking server</button> */}
-        <AppSharafalden/>
+                {/* <button onClick={this.checkServer}>Checking server</button> 
+                           <AppTamimi/>
+         <AppSharafalden/>*/}
             </div>
         )
     }

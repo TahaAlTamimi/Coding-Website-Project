@@ -38,8 +38,10 @@ let videosSchema = {
 };
 
 let materialSchema = {
-  githubUrl: String,
-  slidesUrl: String
+  name: String,
+  video: String,
+  slides: String,
+  helpful: String
 };
 
 let postsSchema = {
