@@ -1,19 +1,24 @@
-import React, { Component } from 'react'
-
-import AppOsaid from './AppOsaid';
+import React, { Component } from "react";
+import AppTamimi from "./AppTamimi";
+import AppOsaid from "./AppOsaid";
+import Home from "./components/Home";
+import "./App.css";
+import NavBar from "./components/NavBar";
 
 export default class App extends Component {
-    render() {
-        return (
-            <div>
-                <AppOsaid />
-                {/* <button onClick={this.checkServer}>Checking server</button> 
+  render() {
+    return (
+      <div>
+        {/* <AppOsaid /> */}
+        {/* <button onClick={this.checkServer}>Checking server</button> 
                            <AppTamimi/>
          <AppSharafalden/>*/}
-            </div>
-        )
-    }
+        {/* <AppTamimi /> */}
+        <NavBar />
+      </div>
+    );
   }
+}
 /*
 test 
 import React, { Component } from "react";

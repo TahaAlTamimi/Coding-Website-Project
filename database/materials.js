@@ -10,43 +10,53 @@ const materialData = [
       "https://drive.google.com/drive/u/2/folders/1V925dCzH2zjxfooojdP27YSBlno7tOeu",
     helpful: "https://www.w3schools.com/html/html_intro.asp"
   },
-  { name: "CSS",
-   video:"https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C",
-   
-   slides: "https://www.w3schools.com/css/",
-    helpful: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+  {
+    name: "CSS",
+    video:
+      "https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C",
 
-  { name: "JavaScript",
-   video: "https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3",
-
-    slides: "https://drive.google.com/drive/u/2/folders/1yzenjnUdapuunZxQVJj_SmoVBzChvQWy",
-
-    helpful: "https://www.w3schools.com/js/",
-    
+    slides: "https://www.w3schools.com/css/",
+    helpful: "https://developer.mozilla.org/en-US/docs/Web/CSS"
   },
-  { name: "Bootstrap",
-   video: "https://www.youtube.com/watch?v=314m7YBRFvQ&list=PL6n9fhu94yhXd4xnk-j5FGhHjUv1LsF0V",
 
-    slides: "https://drive.google.com/drive/u/2/folders/1eRCuT0PCERfFrbzqlnsrCQIH5tZLdTcz",
+  {
+    name: "JavaScript",
+    video:
+      "https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3",
 
-    helpful: "https://www.w3schools.com/bootstrap/",
-    
+    slides:
+      "https://drive.google.com/drive/u/2/folders/1yzenjnUdapuunZxQVJj_SmoVBzChvQWy",
+
+    helpful: "https://www.w3schools.com/js/"
   },
-  { name: "Jqure",
-   video: "https://www.youtube.com/watch?v=a59kOE2Ma1Q&list=PL6n9fhu94yhVDV697uvHpavA3K_eWGQap",
+  {
+    name: "Bootstrap",
+    video:
+      "https://www.youtube.com/watch?v=314m7YBRFvQ&list=PL6n9fhu94yhXd4xnk-j5FGhHjUv1LsF0V",
 
-    slides: "https://drive.google.com/drive/u/2/folders/10vRK8sOdxH4e8_3Jpg97gLDQnXkZy0JD",
+    slides:
+      "https://drive.google.com/drive/u/2/folders/1eRCuT0PCERfFrbzqlnsrCQIH5tZLdTcz",
 
-    helpful: "https://www.w3schools.com/jquery/",
-    
+    helpful: "https://www.w3schools.com/bootstrap/"
   },
-  { name: "React js",
-   video: "https://www.youtube.com/watch?v=sBws8MSXN7A&t=4956s",
+  {
+    name: "Jqure",
+    video:
+      "https://www.youtube.com/watch?v=a59kOE2Ma1Q&list=PL6n9fhu94yhVDV697uvHpavA3K_eWGQap",
 
-    slides: "https://drive.google.com/drive/u/2/folders/1xIwFdHEVvDg-hIFSasPMyWIHgfKMKIng",
+    slides:
+      "https://drive.google.com/drive/u/2/folders/10vRK8sOdxH4e8_3Jpg97gLDQnXkZy0JD",
 
-    helpful: "https://www.w3schools.com/react/",
-   
+    helpful: "https://www.w3schools.com/jquery/"
+  },
+  {
+    name: "React js",
+    video: "https://www.youtube.com/watch?v=sBws8MSXN7A&t=4956s",
+
+    slides:
+      "https://drive.google.com/drive/u/2/folders/1xIwFdHEVvDg-hIFSasPMyWIHgfKMKIng",
+
+    helpful: "https://www.w3schools.com/react/"
   }
 ];
 
@@ -118,7 +128,7 @@ let getMaterial = cb => {
 // example of module.export
 module.exports = {
   myMaterial,
-  getMaterial,
+  getMaterial
   // myHTMLBasic,
   // getMaterialHTMLBasic
 };

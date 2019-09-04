@@ -15,23 +15,19 @@ export default class AppOsaid extends Component {
     postData: {}
   };
 
-
-  addPost = async (title, subject,priority,component) => {
+  addPost = async (title, subject, priority, component) => {
     const newPostData = {
       title,
       subject,
       priority,
       component
     };
-   await this.setState({
+    await this.setState({
       postData: newPostData
     });
-    axios
-    .post(`http://localhost:9000/posts/a`,newPostData ).then(res=>{
-      console.log(res.data)
-    })
-
-
+    axios.post(`http://localhost:9000/posts/a`, newPostData).then(res => {
+      console.log(res.data);
+    });
   };
 
   componentDidMount() {
@@ -44,10 +40,7 @@ export default class AppOsaid extends Component {
       .catch(error => {
         console.log("Error", error);
       });
-
   }
-  
-
 
   // addPost = (e) => {
   //   const newTodo={
@@ -63,15 +56,13 @@ export default class AppOsaid extends Component {
 
   // }
 
-  
-
   render() {
     return (
       <Router>
         <>
           <Route
             exact
-            path="/"
+            path="/Ask/"
             render={() => (
               <React.Fragment>
                 <div
@@ -105,7 +96,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="/HTML" className="btn btn-primary">
+                      <a href="/Ask/HTML" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -123,7 +114,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="/CSS" className="btn btn-primary">
+                      <a href="/Ask/CSS" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -141,7 +132,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="/JavaScript" className="btn btn-primary">
+                      <a href="/Ask/JavaScript" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -159,7 +150,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="/JQuery" className="btn btn-primary">
+                      <a href="/Ask/JQuery" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -177,7 +168,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="/NodeJs" className="btn btn-primary">
+                      <a href="/Ask/NodeJs" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -195,7 +186,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="ReactC" className="btn btn-primary">
+                      <a href="/Ask/ReactC" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -213,7 +204,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="/Mongo" className="btn btn-primary">
+                      <a href="/Ask/Mongo" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -231,7 +222,7 @@ export default class AppOsaid extends Component {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p>
-                      <a href="/PHP" className="btn btn-primary">
+                      <a href="/Ask/PHP" className="btn btn-primary">
                         Go to this section
                       </a>
                     </div>
@@ -241,14 +232,38 @@ export default class AppOsaid extends Component {
             )}
           />
 
-          <Route path="/HTML" component={() => <Html addPost={this.addPost} />} />
-          <Route path="/CSS" component={() => <Css addPost={this.addPost} />} />
-          <Route path="/JQuery" component={() => <JQuery addPost={this.addPost} />} />
-          <Route path="/JavaScript" component={() => <JavaScript addPost={this.addPost} />} />
-          <Route path="/PHP" component={() => <PHP addPost={this.addPost} />} />
-          <Route path="/Mongo" component={() => <Mongo addPost={this.addPost} />} />
-          <Route path="/ReactC" component={() => <ReactC addPost={this.addPost} />} />
-          <Route path="/NodeJs" component={() => <NodeJs addPost={this.addPost} />} />
+          <Route
+            path="/Ask/HTML"
+            component={() => <Html addPost={this.addPost} />}
+          />
+          <Route
+            path="/Ask/CSS"
+            component={() => <Css addPost={this.addPost} />}
+          />
+          <Route
+            path="/Ask/JQuery"
+            component={() => <JQuery addPost={this.addPost} />}
+          />
+          <Route
+            path="/Ask/JavaScript"
+            component={() => <JavaScript addPost={this.addPost} />}
+          />
+          <Route
+            path="/Ask/PHP"
+            component={() => <PHP addPost={this.addPost} />}
+          />
+          <Route
+            path="/Ask/Mongo"
+            component={() => <Mongo addPost={this.addPost} />}
+          />
+          <Route
+            path="/Ask/ReactC"
+            component={() => <ReactC addPost={this.addPost} />}
+          />
+          <Route
+            path="/Ask/NodeJs"
+            component={() => <NodeJs addPost={this.addPost} />}
+          />
         </>
       </Router>
     );
