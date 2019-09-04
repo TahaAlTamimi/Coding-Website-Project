@@ -1,3 +1,15 @@
+import React, { Component } from 'react'
+import AppOsaid from './AppOsaid';
+
+export default class App extends Component {
+    render() {
+        return (
+            <div>
+                <AppOsaid />
+            </div>
+        )
+    }
+/*
 import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
@@ -16,10 +28,10 @@ class App extends Component {
       <>
         <h1>Working Fine</h1>
         {/* <button onClick={this.checkServer}>Checking server</button> */}
+/*
         <NavBar/>
       </>
     );
   }
 }
-
-export default App;
+*/
