@@ -28,7 +28,7 @@ export class Header extends Component {
               <a class="nav-item nav-link active  " 
               
               href="/">
-                Home
+                Home main
               </a>
               {/* <a class="nav-item  nav-link  " href="/">
                 Home
